@@ -1,6 +1,6 @@
 import {Runtime, Inspector} from '@observablehq/runtime';
 import React, {useEffect, useRef} from 'react';
-import sunburst from './@d3/zoomable-sunburst';
+import sunburst from './s';
 import './App.css';
 
 export default function App() {
@@ -12,6 +12,10 @@ export default function App() {
       runtime.module(sunburst, (name) => {
         if (name === "chart") {
           return new Inspector(ref.current);
+        }
+
+        if (name === "labels") {
+          return {};
         }
       });
       return () => runtime.dispose();

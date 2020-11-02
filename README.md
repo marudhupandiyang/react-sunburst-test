@@ -1,3 +1,15 @@
+## My Readme
+
+Setup
+
+- Clone the repo.
+- Perform `yarn install`
+- Start with `yarn start` and the app will be available at http://localhost:3000
+
+All custom Changes are present in https://github.com/marudhupandiyang/react-sunburst-test/commit/0386295c595012ea2ad4628fe0dcba19d7ab3b7f
+
+*********************************
+
 # Observable + create-react-app
 
 This repo was created using `create-react-app`:
